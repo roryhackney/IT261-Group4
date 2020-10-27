@@ -29,6 +29,13 @@
   if(isset($_POST['num1'])){
     $num1 = $_POST['num1'];
     $num2 = $_POST['num2'];
+    
+    
+    
+    #insert if empty statement to show error message if fields not filled out and stop the rest from processing until fields are filled
+    
+    
+    
     $myTotal = $num1 + $num2;
     echo '<h2>You added ' . $num1 . ' and ' . $num2 . '</h2>';
     echo '<p class="centered" style="color:red;">and the answer is <br>'
