@@ -26,22 +26,33 @@
   </body>
 
 <?php
-  if(isset($_POST['num1'])){
+    
+    
+if(isset($_POST['num1'],
+         $_POST['num2'])
+  ){
     $num1 = $_POST['num1'];
     $num2 = $_POST['num2'];
     
+//This is the original calculation: $myTotal = $num1 + $num2; but it threw me a warning of 'A non-numeric value encountered in on line bla bla. So I needed to change it to the thing below. Got it from Stackoverflow.'
+    
+    $myTotal = ((int)$num1 + (int)$num2);
     
     
-    #insert if empty statement to show error message if fields not filled out and stop the rest from processing until fields are filled
-    
-    
-    
-    $myTotal = $num1 + $num2;
+if(empty($num1 && $num2)) {
+    echo '<h1>Error</h1>';
+    echo '<p>Please fill out the form!</p>';
+} else {
     echo '<h2>You added ' . $num1 . ' and ' . $num2 . '</h2>';
     echo '<p class="centered" style="color:red;">and the answer is <br>'
     . $myTotal . '!</p>';
     echo'<p class="centered"><a href="">Reset page</a></p>';
-  }
+    
+}}    
+    
+    #insert if empty statement to show error message if fields not filled out and stop the rest from processing until fields are filled
+    
+
 ?>
 
 </html>
