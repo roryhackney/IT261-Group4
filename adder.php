@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Adder Assignment</title>
+    <title>Group Adder Assignment</title>
     <style>
       h1 {color: green;
           text-align: center;}
@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <h1>Adder.php</h1>
+    <h1>Group Adder Errors</h1>
     <form action="" method="post">
       <label>Enter the first number:</label>
       <input type="text" name="num1"><br>
