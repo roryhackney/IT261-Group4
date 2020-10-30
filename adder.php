@@ -40,8 +40,8 @@ if(isset($_POST['num1'],
     
     
 if(empty($num1 && $num2)) {
-    echo '<h1>Error</h1>';
-    echo '<p>Please fill out the form!</p>';
+    echo '<h2 style="color:red;">Error</h2>';
+    echo '<p class="centered">Please fill out the form!</p>';
 } else {
     echo '<h2>You added ' . $num1 . ' and ' . $num2 . '</h2>';
     echo '<p class="centered" style="color:red;">and the answer is <br>'
