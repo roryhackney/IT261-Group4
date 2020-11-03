@@ -48,7 +48,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Sticky Currency Form</title>
+    <title>Group Currency Form With An Attitude</title>
     <style>
       form {
         width: 350px;
@@ -90,6 +90,7 @@
   </head>
 
   <body>
+    <h1>Group Currency Form</h1>
     <form action="" method="post">
       <fieldset>
         <label>Name</label>
