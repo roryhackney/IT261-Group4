@@ -182,6 +182,11 @@
               echo '<p>Your foreign currency in the amount of ', $amount, ' has now been converted to $' . $total_f . '.</p>';
               echo '<p>Your money will be wired to ', $bank, ' within 24 hours.</p>';
               echo '<p>We will get back to you through your email, ', $email, '.</p>';
+            if ($total < 0750.00){ 
+                echo '<h1>Less than $750</h1>';
+            } else{
+               echo '<h1>More than $750</h1>';
+            }
             } //end if isset
       ?>
     </div>
