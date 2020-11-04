@@ -54,6 +54,17 @@
         width: 350px;
         margin: 0 auto;
       }
+      h1 {
+            text-align: center;
+        }
+        .green {
+            color: green;
+            text-align: center;
+        }
+        .red {
+            color: red;
+            text-align: center;
+        }
       ul {
         list-style-type: none;
       }
@@ -183,9 +194,11 @@
               echo '<p>Your money will be wired to ', $bank, ' within 24 hours.</p>';
               echo '<p>We will get back to you through your email, ', $email, '.</p>';
             if ($total < 0750.00){ 
-                echo '<h1>Less than $750</h1>';
-            } else{
-               echo '<h1>More than $750</h1>';
+                echo '<h1 class="red">Less than $750</h1>';
+                echo '<h2 class="red">Poor thing!</h2>';
+            } else {
+               echo '<h1 class="green">More than $750</h1>';
+                echo '<h2 class="green">Life is awesome!</h2>';
             }
             } //end if isset
       ?>
