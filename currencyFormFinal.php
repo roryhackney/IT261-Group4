@@ -22,7 +22,7 @@
       $name = $_POST['name'];
     }
     if(empty($_POST['email'])) {
-      $emailError = 'Please enter your email.';
+      $emailError = 'Please enter your email address .';
     } else {
       $email = $_POST['email'];
     }
@@ -105,7 +105,7 @@
   </head>
 
   <body>
-    <h1>Group Currency Form</h1>
+    <h1> Group Currency Form</h1>
     <form action="" method="post">
       <fieldset>
         <label>Name</label>
@@ -148,7 +148,7 @@
           >Your Mattress</option>
         </select>
           <span><?php echo $bankError; ?></span>
-        <label>Choose your currency</label>
+        <label> Please Choose your currency </label>
         <ul>
           <!--logic: if post currency is set and is post currency equal to value? then check the radio-->
           <li><input type="radio" name="currency" value="0.013"
@@ -192,7 +192,7 @@
 <!-- display messages -->
     <div class="box">
       <?php
-              echo '<h2>Thank you, ', $name, '!</h2>';
+              echo '<h2> Thank you, ', $name, '!</h2>';
               echo '<p>You have filled out our form successfully.</p>';
               echo '<p>Your foreign currency in the amount of ', $amount, ' has now been converted to $' . $total_f . '.</p>';
               echo '<p>Your money will be wired to ', $bank, ' within 24 hours.</p>';
