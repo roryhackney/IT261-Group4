@@ -70,6 +70,7 @@
         display: block;
         color: red;
         font-style: italic;
+        margin-bottom:10px;
       }
     </style>
   </head>
