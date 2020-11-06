@@ -53,9 +53,12 @@
       form {
         width: 350px;
         margin: 0 auto;
+        font-family: helvetica;
       }
+      
       h1 {
             text-align: center;
+            font-family: helvetica;
         }
         .green {
             color: green;
@@ -88,6 +91,7 @@
         background-color: beige;
         padding: 20px;
         border: 1px solid green;
+        font-family: helvetica;
       }
       select {
         margin-bottom: 10px;
