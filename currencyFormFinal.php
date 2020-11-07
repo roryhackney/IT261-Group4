@@ -189,14 +189,14 @@
           $currency = $_POST['currency'];
     //calculate and format total
           $total = $amount * $currency;
-          $total_f = number_format($total, 2);
+//           $total_f = number_format($total, 2);
     ?>
 <!-- display messages -->
     <div class="box">
       <?php
         echo '<h2>Thank you, ', $name, '!</h2>';
         echo '<p>You have filled out our form successfully.</p>';
-        echo '<p>Your foreign currency in the amount of ', $amount, ' has now been converted to $' . $total_f . '.</p>';
+        echo '<p>Your foreign currency in the amount of ', $amount, ' has now been converted to $' . $total . '.</p>';
         echo '<p>Your money will be wired to ', $bank, ' within 24 hours.</p>';
         echo '<p>We will get back to you through your email, ', $email, '.</p>';
         if($total < 750.00){ 
