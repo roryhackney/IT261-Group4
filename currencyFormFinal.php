@@ -39,9 +39,14 @@
       ul {
         list-style-type: none;
       }
-      input {
-        margin-bottom: 10px;
-      }
+      input[type = text],
+     input[type = Email],
+     textarea { 
+
+        width: 100%;
+        height: 30px;
+
+    }
       input[type="text"] {
         width: 100%;
       }
