@@ -207,9 +207,11 @@
         if($total < 750.00){ 
           echo '<h1 class="red">Less than $750</h1>';
           echo '<h2 class="red">Poor thing!</h2>';
+          echo '<img src="images/sad.gif" alt="sad face">';
         } else {
           echo '<h1 class="green">More than $750</h1>';
           echo '<h2 class="green">Life is awesome!</h2>';
+          echo '<img src="images/happy.gif" alt="happy face">';
         } //end else
         } //end if isset
       ?>
