@@ -11,7 +11,38 @@
   $amountError = '';
   $bankError = '';
   $currencyError = '';
-?>
+
+      if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  //if name is empty, create $nameError and say 'Please enter your name'
+  //which is assigned to the $nameError variable
+  //If not empty, assign $_POST['name'] to $name
+      if(empty($_POST['name'])) {
+        $nameError = 'Please enter your name.';
+      } else {
+        $name = $_POST['name'];
+      }
+      if(empty($_POST['email'])) {
+        $emailError = 'Please enter your email address.';
+      } else {
+        $email = $_POST['email'];
+      }
+      if(empty($_POST['amount'])) {
+        $amountError = 'Please enter an amount of money.';
+      } else {
+        $amount = $_POST['amount'];
+      }
+      if($_POST['bank'] == 'NULL') {
+        $bankError = 'Please choose your banking institution.';
+      } else {
+        $bank = $_POST['bank'];
+      }
+      if(empty($_POST['currency'])) {
+        $currencyError = 'Please select your currency.';
+      } else {
+        $currency = $_POST['currency'];
+      }
+    }//close if server request method
+  ?>
   
 <!DOCTYPE html>
 <html lang="en">
@@ -79,38 +110,7 @@
   </head>
 
   <body>
-    <?php
-      if($_SERVER['REQUEST_METHOD'] == 'POST') {
-  //if name is empty, create $nameError and say 'Please enter your name'
-  //which is assigned to the $nameError variable
-  //If not empty, assign $_POST['name'] to $name
-      if(empty($_POST['name'])) {
-        $nameError = 'Please enter your name.';
-      } else {
-        $name = $_POST['name'];
-      }
-      if(empty($_POST['email'])) {
-        $emailError = 'Please enter your email address.';
-      } else {
-        $email = $_POST['email'];
-      }
-      if(empty($_POST['amount'])) {
-        $amountError = 'Please enter an amount of money.';
-      } else {
-        $amount = $_POST['amount'];
-      }
-      if($_POST['bank'] == 'NULL') {
-        $bankError = 'Please choose your banking institution.';
-      } else {
-        $bank = $_POST['bank'];
-      }
-      if(empty($_POST['currency'])) {
-        $currencyError = 'Please select your currency.';
-      } else {
-        $currency = $_POST['currency'];
-      }
-    }//close if server request method
-  ?>
+    
     
     <h1>Group Currency Form</h1>
     <form action="" method="post">
