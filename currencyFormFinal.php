@@ -18,7 +18,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Group Currency Form With An Attitude</title>
+    <title>Group Currency Form with an Attitude</title>
     <style>
       form {
         width: 350px;
@@ -70,7 +70,7 @@
         display: block;
         color: red;
         font-style: italic;
-        margin-bottom:10px;
+        margin-bottom:8px;
       }
     </style>
   </head>
@@ -148,7 +148,7 @@
           <option value="Your Mattress"
           <?php if(isset($_POST['bank']) && $_POST['bank'] == 'Your Mattress'){
             echo 'selected = "selected"';}?>
-          >Your Mattress</option>
+          >Mattress</option>
         </select>
           <span><?php echo $bankError; ?></span>
         <label>Choose your currency</label>
