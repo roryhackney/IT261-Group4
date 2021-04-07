@@ -1,2 +1,3 @@
 # IT261-Group4
-IT261 Group 4 Repository for group assignments
+IT261 PHP <br>
+Group 4 Repository for group assignments
